@@ -19,7 +19,7 @@ html {
   	font-weight: 400;
   }
 
-  .content {
+  .about {
     height: 1000px;
     background-color: #333;
     display: grid;
@@ -28,7 +28,7 @@ html {
   /* navigation styles start here */
 
   header {
-    background: rgba(0, 214, 170, .85);
+    background: purple;
     text-align: center;
     position: fixed;
     z-index: 999;
@@ -86,7 +86,7 @@ html {
     text-align: left;
     top: 100%;
     left: 0;
-    background: rgba(0, 214, 170, .85);
+    background: purple);
     width: 100%;
     overflow: hidden;
     height: 0;
