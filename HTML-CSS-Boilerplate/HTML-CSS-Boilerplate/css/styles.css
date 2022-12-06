@@ -1,0 +1,8 @@
+html {
+    /* content stays responsive */
+    box-sizing: border-box;
+  }
+  /* adding above property to all the elements by default */
+  * {
+    box-sizing: inherit;
+  }

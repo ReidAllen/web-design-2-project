@@ -21,6 +21,7 @@ html {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero-image.svg");
     height: 50%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -137,8 +138,10 @@ h1 {
   }
 
   nav li {
+    margin-top: 1.8em;
     margin-bottom: 1em;
     margin-left: 1em;
+    padding-left: 12em;
   }
 
   nav a {
