@@ -15,6 +15,41 @@ body, html {
   height: 100%;
 }
 
+.footer-container {
+  background-color: purple;
+  padding-bottom: 40px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+h3 {
+  color: white;
+  font-family: blambot-pro, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.url {
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  background-color: purple;
+}
+
+.email {
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+
+.number {
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+
 img[alt~="logo"] {
   height: 80px;
   width: auto;
@@ -84,6 +119,103 @@ img[alt~="me"] {
   justify-self: center;
   border: 5px purple solid;
 }
+.search {
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 0;
+  padding: 10px 1600px 10px 20px;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  border: 5px white solid;
+  display: grid;
+  grid-template-rows: 1fr;
+
+}
+
+.featured {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  padding: 50px 50px;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+}
+
+.drake {
+  width: 700px;
+  margin-bottom: 100px;
+  margin-left: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.drake-text {
+  font-size: 1.5rem;
+  padding: 5px;
+  color: white;
+  font-family: blambot-pro, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+}
+
+.kid-cudi {
+  width: 700px;
+  margin-left: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 100px;
+}
+
+.kid-text {
+  font-size: 1.5rem;
+  padding: 5px;
+  color: white;
+  font-family: blambot-pro, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.igor {
+  width: 700px;
+  margin-left: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 100px;
+}
+
+.igor-text {
+  font-size: 1.5rem;
+  padding: 5px;
+  color: white;
+  font-family: blambot-pro, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.damn {
+  width: 700px;
+  margin-left: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 100px;
+}
+
+.damn-text {
+  font-size: 1.5rem;
+  padding: 5px;
+  color: white;
+  font-family: blambot-pro, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.browse {
+  background-color: #333;
+  display: flex;
+  align-items: start;
+}
 
 body {
   margin: 0;
@@ -95,6 +227,7 @@ body {
 .about {
   height: 1000px;
   margin-top: 200px;
+  margin-bottom: 150px;
   justify-content: center;
   background-color: #333;
   display: grid;
@@ -263,33 +396,33 @@ nav a:hover {
     transform: scale(1,1);
   }
 
-nav {
-  display: none;
-}
-
-input.nav-toggle {
-  display: none;
-}
-
-input.nav-toggle:checked ~ nav {
-  display: block;
-}
-
-label.nav-toggle-label {
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
+  nav {
+    display: none;
+  }
 
   input.nav-toggle {
     display: none;
   }
 
-  label.nav-toggle-label {
-    display: none;
-  }
-
-  nav {
+  input.nav-toggle:checked ~ nav {
     display: block;
   }
-}
+
+  label.nav-toggle-label {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+
+    input.nav-toggle {
+      display: none;
+    }
+
+    label.nav-toggle-label {
+      display: none;
+    }
+
+    nav {
+      display: block;
+    }
+  }
