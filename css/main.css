@@ -100,6 +100,7 @@ img[alt~="logo"] {
 }
 
 button {
+  color: purple;
   font-size: 1.5rem;
   padding: 10px 10px;
 }
@@ -167,11 +168,11 @@ img[alt~="me"] {
   margin-bottom: 100px;
   margin-left: 300px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
 }
 
 .drake-text {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   padding: 5px;
   color: white;
   font-family: blambot-pro, sans-serif;
@@ -184,12 +185,12 @@ img[alt~="me"] {
   width: 700px;
   margin-left: 900px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   margin-bottom: 100px;
 }
 
 .kid-text {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   padding: 5px;
   color: white;
   font-family: blambot-pro, sans-serif;
@@ -201,12 +202,12 @@ img[alt~="me"] {
   width: 700px;
   margin-left: 300px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   margin-bottom: 100px;
 }
 
 .igor-text {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   padding: 5px;
   color: white;
   font-family: blambot-pro, sans-serif;
@@ -218,12 +219,12 @@ img[alt~="me"] {
   width: 700px;
   margin-left: 900px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   padding-bottom: 100px;
 }
 
 .damn-text {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   padding: 5px;
   color: white;
   font-family: blambot-pro, sans-serif;
@@ -235,6 +236,12 @@ img[alt~="me"] {
   background-color: #333;
   display: flex;
   align-items: start;
+}
+
+.venues {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 1fr;
 }
 
 body {
