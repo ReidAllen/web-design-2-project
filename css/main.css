@@ -244,6 +244,26 @@ img[alt~="me"] {
   grid-template-rows: 1fr 1fr;
 }
 
+.venue1 {
+  width: 300px;
+  height: auto;
+}
+
+.venue2 {
+  width: 300px;
+  height: auto;
+}
+
+.venue3 {
+  width: 300px;
+  height: auto;
+}
+
+.venue4 {
+  width: 300px;
+  height: auto;
+}
+
 body {
   margin: 0;
   background: #333;
