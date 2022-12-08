@@ -1,12 +1,11 @@
 html {
-  /* content stays responsive */
   box-sizing: border-box;
 }
-/* adding above property to all the elements by default */
 * {
   box-sizing: inherit;
 }
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+@import url('https://use.typekit.net/afi2dwx.css')
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -16,52 +15,84 @@ body, html {
   height: 100%;
 }
 
-/* The hero image */
+img[alt~="logo"] {
+  height: 80px;
+  width: auto;
+  margin-left: 100px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
 .hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero-image.svg);
-  height: 50%;
+  height: 100%;
   width: 100%;
-  background-position: center;
+  margin-bottom: 0px;
+  background-position: cover;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
-/* Place text in the middle of the image */
 .hero-text {
   text-align: center;
   position: absolute;
+  font-size: 1.5rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
 }
 
-h1, h2, p {
-  color: white;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+button {
+  font-size: 1.5rem;
+  padding: 10px 10px;
 }
 
 h1 {
+  color: white;
+  font-family: blambot-pro, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  justify-self: center;
+  padding-bottom: 50px;
+}
 
+p {
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  justify-content: center;
+  padding-top: 120px;
+}
+
+img[alt~="me"] {
+  height: 500px;
+  width: auto;
+  justify-self: center;
+  border: 5px purple solid;
 }
 
 body {
   margin: 0;
-  background: #222;
+  background: #333;
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
 }
 
 .about {
   height: 1000px;
+  margin-top: 200px;
+  justify-content: center;
   background-color: #333;
   display: grid;
-  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2 1fr);
+  gap: 100px;
+  align-items: start;
 }
-/* navigation styles start here */
 
 header {
   background: purple;
@@ -72,26 +103,26 @@ header {
 }
 
 .nav-toggle {
-  position: absolute !important;
+  position: relative !important;
   top: -9999px !important;
   left: -9999px !important;
 }
 
 .nav-toggle-label {
-  position: absolute;
-  top: 1;
-  left: 1;
-  margin-left: 1em;
+  position: relative;
+  margin: 0;
+  padding-top: 0;
+  padding-left: 0;
   height: 100%;
   display: flex;
-  align-items: center;
+  align-items: left;
   cursor: pointer;
 }
 
 .nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-  display: block;
+  display: flex;
   background: white;
   height: 2px;
   width: 2em;
@@ -142,6 +173,9 @@ nav li {
   margin-bottom: 1em;
   margin-left: 1em;
   padding-left: 12em;
+  font-family: blambot-pro, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 nav a {
@@ -150,7 +184,6 @@ nav a {
   font-size: 1.2rem;
   text-transform: uppercase;
   opacity: 0;
-  /*   transition: opacity 150ms ease-in-out; */
   transition: opacity 250ms ease-in-out 250ms;
 }
 
@@ -158,7 +191,7 @@ nav a:hover {
   color: #000;
 }
 
-/* ~ looks for any preceeding sibling. */
+
 .nav-toggle:checked ~ nav {
   transform: scale(1,1);
   height: auto;
@@ -167,10 +200,6 @@ nav a:hover {
 .nav-toggle:checked ~ nav a {
   opacity: 1;
 }
-
-
-
-
 
 @media screen and (min-width: 48em) {
   .nav-toggle-label {
@@ -223,38 +252,33 @@ nav a:hover {
   nav a:hover::before {
     transform: scale(1,1);
   }
-}
-/* default size - mobile - less than 768px */
 
-/* nav is hidden in mobile */
 nav {
   display: none;
 }
-/* input has a class of .nav-toggle and display is set to none */
+
 input.nav-toggle {
   display: none;
 }
-/* All elements have pseudo state, the :checked state is used for this example*/
-/* if input.nav-toggle is checked then display the nav */
+
 input.nav-toggle:checked ~ nav {
   display: block;
 }
-/* display the label in mobile that has our hamburgur menu  */
+
 label.nav-toggle-label {
   display: block;
 }
 
-/* Use this styling for anything above 768px */
 @media screen and (min-width: 768px) {
-  /*  make the input hidden on screens above 768px (desktop and tablet) */
+
   input.nav-toggle {
     display: none;
   }
-  /*  make the label hidden on screens above 768px (desktop and tablet) */
+
   label.nav-toggle-label {
     display: none;
   }
-  /*  display the nav  on screens above 768px (desktop and tablet) */
+
   nav {
     display: block;
   }
