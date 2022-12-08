@@ -15,13 +15,21 @@ body, html {
   height: 100%;
 }
 
+footer {
+  background-color: purple;
+  width: 100%;
+  height: auto;
+}
+
 .footer-container {
   background-color: purple;
-  padding-bottom: 40px;
-  width: 100%;
-  height: 100px;
+  align-items: flex-end;
+}
+
+.footer-container2 {
   display: flex;
-  flex-direction: row;
+  align-items: flex-start;
+  padding-bottom: 40px;
 }
 
 h3 {
@@ -29,25 +37,37 @@ h3 {
   font-family: blambot-pro, sans-serif;
   font-style: normal;
   font-weight: 400;
+  height: 30px;
+  padding-left: 1500px;
+  padding-top: 40px;
 }
 
 .url {
+  flex: 5;
+  height: 30px;
   color: white;
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
-  background-color: purple;
+  padding-top: 20px;
+  padding-left: 50px
 }
 
 .email {
+  flex: 1;
+  height: 30px;
   color: white;
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
+  padding-top: 20px;
 }
 
 .number {
+  flex: 1;
+  height: 30px;
   color: white;
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
+  padding-top: 20px;
 }
 
 img[alt~="logo"] {
