@@ -57,7 +57,7 @@ h1 {
   grid-column-start: 1;
   grid-column-end: 4;
   justify-self: center;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 
 p {
@@ -66,6 +66,16 @@ p {
   font-weight: 400;
   justify-content: center;
   padding-top: 120px;
+}
+
+p2 {
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  justify-content: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding-bottom: 120px;
 }
 
 img[alt~="me"] {
